@@ -200,10 +200,10 @@ body.ready .who{opacity:1;transform:none}
 @media (max-width:900px){.intro-row{grid-template-columns:1fr}.lead{flex-direction:column;gap:14px}}
 
 /* services: sticky stacking rows */
-.svc-list{margin-top:clamp(80px,10vw,160px);--h:126px}
+.svc-list{margin-top:clamp(80px,10vw,160px);--h:100px}
 .svc{position:sticky;top:calc(96px + var(--i)*var(--h));background:var(--dark);border-top:1px solid var(--dline)}
-.svc-head{display:grid;grid-template-columns:1fr 1fr auto;align-items:start;height:var(--h);padding-top:26px;cursor:pointer}
-.svc-head .n,.svc-head h3{font-family:Anton,sans-serif;font-size:clamp(44px,4.4vw,78px);line-height:1;font-weight:400}
+.svc-head{display:grid;grid-template-columns:1fr 1fr auto;align-items:start;height:var(--h);padding-top:22px;cursor:pointer}
+.svc-head .n,.svc-head h3{font-family:Anton,sans-serif;font-size:clamp(38px,3.6vw,62px);line-height:1;font-weight:400}
 .svc-head .ar{width:34px;height:34px;color:var(--on-dark-3);margin-top:12px;transition:transform .6s var(--ease),color .3s}
 .svc:hover .ar{transform:rotate(-90deg);color:var(--on-dark)}
 .svc-body{display:grid;grid-template-columns:1fr 1fr;padding:30px 0 120px}
@@ -214,10 +214,10 @@ body.ready .who{opacity:1;transform:none}
 .subl .mono{color:var(--on-dark-3);font-size:17px}
 .subl b{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(24px,2.1vw,34px);color:#c2c0ba}
 @media (max-width:900px){
-  .svc-list{--h:84px}
+  .svc-list{--h:64px}
   .svc{top:calc(78px + var(--i)*var(--h))}
-  .svc-head{grid-template-columns:64px 1fr auto;padding-top:20px}
-  .svc-head .n,.svc-head h3{font-size:34px}
+  .svc-head{grid-template-columns:48px 1fr auto;padding-top:16px}
+  .svc-head .n,.svc-head h3{font-size:26px}
   .svc-head .ar{width:24px;height:24px;margin-top:6px}
   .svc-body{grid-template-columns:1fr;padding-bottom:70px}.svc-body>div{grid-column:1}
 }
@@ -228,7 +228,7 @@ body.ready .who{opacity:1;transform:none}
 .prow::before{content:"";position:absolute;inset:0;background:var(--dark);border-radius:8px;transform:scaleY(.6);opacity:0;transition:transform .6s var(--ease),opacity .4s var(--ease);z-index:-1}
 .prow .meta{color:var(--ink-2);transition:color .4s}
 .prow .thumb{width:0;height:174px;overflow:hidden;border-radius:6px;transition:width .7s var(--ease),margin .7s var(--ease)}
-.prow .thumb img{width:262px;height:174px;max-width:none;object-fit:cover;object-position:left center;border:5px solid var(--paper);border-radius:6px;background:var(--paper)}
+.prow .thumb img{width:262px;height:174px;max-width:none;object-fit:cover;object-position:center;border:5px solid var(--paper);border-radius:6px;background:var(--paper)}
 .prow h3{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,4.6vw,86px);line-height:1;transition:color .4s}
 .prow .ext{width:30px;height:30px;color:var(--ink-2);transition:color .4s,transform .6s var(--ease)}
 @media (hover:hover) and (min-width:901px){
@@ -397,16 +397,18 @@ body.ready .who{opacity:1;transform:none}
 <div class="ctag" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <a href="#top" class="logo" aria-label="Usman Ali Shahid, home"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><path class="f-l" d="M6.70 15.60 L23.20 25.10 L23.20 43.00 L6.70 33.50Z"/><path class="f-r" d="M24.80 25.10 L41.30 15.60 L41.30 33.50 L24.80 43.00Z"/><path class="f-t" d="M9.12 14.00 L15.35 10.40 L21.58 14.00 L15.35 17.60Z"/><path class="f-t" d="M17.77 19.00 L24.00 15.40 L30.23 19.00 L24.00 22.60Z"/><path class="f-t" d="M26.42 14.00 L32.65 10.40 L38.88 14.00 L32.65 17.60Z"/><path class="f-g" d="M17.77 9.00 L24.00 5.40 L30.23 9.00 L24.00 12.60Z"/></svg><span class="wm"><b>Usman Ali</b><small>Cloud · DevOps · AI</small></span></a>
+  <a href="#top" class="logo" aria-label="Usman Ali Shahid, home"><svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><path class="f-l" d="M6.70 15.60 L23.20 25.10 L23.20 43.00 L6.70 33.50Z"/><path class="f-r" d="M24.80 25.10 L41.30 15.60 L41.30 33.50 L24.80 43.00Z"/><path class="f-t" d="M9.12 14.00 L15.35 10.40 L21.58 14.00 L15.35 17.60Z"/><path class="f-t" d="M17.77 19.00 L24.00 15.40 L30.23 19.00 L24.00 22.60Z"/><path class="f-t" d="M26.42 14.00 L32.65 10.40 L38.88 14.00 L32.65 17.60Z"/><path class="f-g" d="M17.77 9.00 L24.00 5.40 L30.23 9.00 L24.00 12.60Z"/></svg></a>
   <nav class="mid" aria-label="Main">
     <div class="svcwrap" id="svcwrap">
       <a class="nb" href="#services"><span class="t"><span>Services</span><span>Services</span></span></a>
       <button class="nb chev" aria-label="Show services" aria-expanded="false" id="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
       <div class="dd"><div>
         <a href="#svc-0"><small>01</small>Cloud &amp; Kubernetes</a>
-        <a href="#svc-1"><small>02</small>GitOps &amp; CI/CD</a>
-        <a href="#svc-2"><small>03</small>AI agents &amp; MCP</a>
-        <a href="#svc-3"><small>04</small>Observability</a>
+        <a href="#svc-1"><small>02</small>Cloud migration</a>
+        <a href="#svc-2"><small>03</small>GitOps &amp; CI/CD</a>
+        <a href="#svc-3"><small>04</small>AI agents &amp; MCP</a>
+        <a href="#svc-4"><small>05</small>n8n automation</a>
+        <a href="#svc-5"><small>06</small>Observability</a>
       </div></div>
     </div>
     <a class="nb" href="#projects"><span class="t"><span>Projects</span><span>Projects</span></span></a>
@@ -433,7 +435,6 @@ body.ready .who{opacity:1;transform:none}
 <main id="top">
 
   <section class="hero px" id="hero" data-theme="light">
-    <div class="who"><div><span class="mono"><span class="pulse"></span>Cloud &amp; DevOps · Available for full-time roles</span></div></div>
     <h1 class="cond">
       <span class="ln"><span>Cloud platforms that</span></span>
       <span class="ln"><span>scale, recover and</span></span>
@@ -768,8 +769,10 @@ sub.innerHTML=sub.innerHTML.split(' ').map((w,i)=>`<span class="w" style="transi
 /* services */
 const services=[
   ['Cloud & Kubernetes','Containerised platforms on k3s and AWS that keep running under real limits. I set up Helm charts, quotas and storage so workloads stay up when memory gets tight.',['Single-node & multi-node k3s','Helm, Kustomize & Terraform','Quotas, storage & autoscaling']],
+  ['Move your system to the cloud','Still running on one server or on-premises? I move your apps to AWS or Azure with containers, Terraform and CI/CD, then hand over a setup that scales, backs itself up and recovers on its own.',['Cloud migration to AWS & Azure','Infrastructure as code with Terraform','Backups, failover & cost control']],
   ['GitOps & CI/CD','Every change follows the same path. ArgoCD keeps the cluster in sync with Git, and GitHub Actions validates manifests and builds images before a deploy goes out.',['ArgoCD declarative sync','Multi-stage GitHub Actions','Zero-downtime rollouts']],
   ['AI agents & MCP','Multi-agent systems that do real work safely. Agents built on LangGraph and CrewAI use MCP tool servers and change code only inside sandboxes with verification checkpoints.',['LangGraph & CrewAI teams','Model Context Protocol servers','Sandboxed execution']],
+  ['n8n workflow automation','I build n8n workflows that connect your apps, APIs and AI models, so repetitive work like lead intake, reports, alerts and resume screening runs by itself, around the clock.',['Custom workflows, webhooks & APIs','AI steps with LLMs & vector search','Self-hosted n8n on Docker or Kubernetes']],
   ['Observability','If it isn\'t measured, it isn\'t running. I wire metrics, logs and traces together and add security on top, so problems are found before users notice them.',['Prometheus & Grafana','Loki & Tempo tracing','Vault & DevSecOps scanning']],
 ];
 const arrow='<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 7 7 17M16 17H7V8"/></svg>';
